@@ -1,0 +1,83 @@
+//Reset
+// ALL VARIABLE
+
+$primary: #0d1b48;
+$white-color: #fff;
+$body-bg: #f5f4f8;
+
+.bg-primary-dark {
+  background-color: $primary;
+}
+
+.color {
+  color: $primary;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $white-color;
+  background-color: $body-bg !important;
+}
+
+//Header
+
+.nav-link {
+  color: $white-color !important;
+  font-size: 1.4rem !important;
+  text-transform: capitalize !important;
+}
+
+.header-btn {
+  font-size: 1.4rem !important;
+  padding: 0.5rem 3rem !important;
+  display: flex;
+  align-items: center;
+}
+
+.header-btn:last-child {
+  color: $white-color;
+}
+
+//Hero
+
+.hero-area {
+  height: 90vh;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+}
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+//footer
+
+.footer {
+  clip-path: polygon(
+    66% 26%,
+    100% 0,
+    100% 100%,
+    75% 100%,
+    25% 100%,
+    0 100%,
+    0 26%
+  );
+  padding: 5rem 0rem !important;
+}
